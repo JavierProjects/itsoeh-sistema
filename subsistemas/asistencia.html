@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asistencia</title>
+</head>
+<body>
+  <!-- Los archivos html de cada subsistema incluyen en la parte superior un enlace a index.html. -->
+  <section>
+    <a href="./../index.html">Home</a>
+  </section>
+
+  <!-- Cada archivo html de cada subsistema contiene las siguientes secciones:
+  • Nombre del subsistema. Esta sección incluye el nombre del subsistema así como una descripción del proceso funcional del subsistema. -->
+  <h1>Asistencia</h1>
+  El subsistema de Asistencia permite a los docentes registrar la asistencia de sus alumnos. Mientras que los alumnos pueden consultar el estado de sus asistencias de cada una de sus asignaturas del semestre actual. Finalmente, el jefe de carrera puede consultar el registro de asistencia de cualquier alumno en cualquier asignatura.
+
+  <!-- • Usuarios del subsistema. Esta sección lista los usuarios que interactúan con el subsistema. -->
+  <h1>Usuarios del subsistema</h1>
+  <ul>
+    <li>Docente</li>
+    <li>Alumno</li>
+    <li>Jefe de carrera</li>
+  </ul>
+  
+  <!-- • Requerimientos por usuario. Esta sección muestra una lista numerada de los requerimientos identificados por cada usuario. -->
+  <h1>Requerimientos por usuario</h1>
+  
+  <h2>Requerimientos del Docente</h2>
+  <p>El Docente debe ser capaz de:</p>
+  <ol>
+    <li>Accesar el sistema con su numero de empleado y contraseña asignada por el administrador de EduTrack.</li>
+    <li>Cambiar su contraseña la primera vez que ingrese a EduTrack.</li>
+    <li>Ver la lista de materias del semestre actual</li>
+    <li>Ver la lista de grupos de cada materia del semestre actual.</li>
+    <li>Accesar la lista de asistencia de un grupo especifico de una materia especifica.</li>
+    <li>Cambiar el estado de un alumno dentro de una lista de sistencia: No asistio (valor por defecto) a Asistio o No asistio a Retardo.            
+      <ul>
+        <li>El sistema guarda de manera automatica la hora HH:mm:ss en que un docente cambio el estado de un alumno en la lista de asistencia.</li>
+        <li>Una vez que el docente abre la lista tiene 5 minutos para pasar lista, despus de ese tiempo cualquier cambio en la lista es retardo.</li>        
+      </ul>
+    </li>
+    <li>Modificar el estado de un estudiante en una clase terminada: No asistio a justificado. 
+      <ul>
+        <li>Agregar descripción de la justificacion.</li>
+        <li>Agregar imagen del justificante.</li>
+      </ul>
+    </li>
+  </ol>
+
+
+  <h2>Requerimientos del Alumno</h2>
+  <p>El Alumno debe ser capaz de:</p>
+  <ol>
+    <li>Accesar el sistema con su numero de Alumno y contraseña asignada por el administrador de EduTrack.</li>
+    <li>Cambiar su contraseña la primera vez que ingrese a EduTrack.</li>
+    <li>Ver la lista de materias del semestre actual</li>
+    <li>Ver su historial de asistencia por materia: fecha, hora, estado (No asistio, asistio o justificado).</li>
+  </ol>
+
+
+  <h2>Requerimientos del Jefe de carrera</h2>
+  <p>El Jefe de carrera debe ser capaz de:</p>
+  <ol>
+    <li>Accesar el sistema con su numero de empleado y contraseña asignada por el administrador de EduTrack.</li>
+    <li>Cambiar su contraseña la primera vez que ingrese a EduTrack.</li>
+    <li>Ver la lista de materias del semestre actual</li>
+    <li>Ver la lista de grupos del semestre actual</li>
+    <li>Accesar el historial de asistencia de un grupo especifico en una materia especifica y fecha especifica.</li>
+    <li>Accesar el historial de asistencia de un alumno en especifico por matricula o nombre de una materia especifica: Materia, docente, fecha, hora, estado (No asistio, asistio o justificado).</li>    
+  </ol>
+  
+  
+  <!-- • Responsable del subsistema. Esta sección contiene una lista no ordenada con un solo elemento el cual, es el nombre del integrante asignado a implementar el subsistema. -->
+  <h1>Responsable del subsistema</h1>
+
+  <ul>
+    <li>Dr. Francisco Javier Cuadros Romero (fcuadros@itsoeh.edu.mx)</li>    
+  </ul>
+</body>
+</html>
